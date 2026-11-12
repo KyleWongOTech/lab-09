@@ -75,10 +75,8 @@ def is_balanced(s):   # Part 4 - stretch (optional)
     myList = []
     for i in range(len(s)):
         if(s[i]=='(' or s[i]=='{' or s[i]=='[' ):
-             print("test 1")
              myList.append(s[i])
         elif myList:
-            print("test 2")
             if (s[i] == ')'):
                 if not myList[len(myList)-1]=='(':
                     return False
@@ -96,7 +94,6 @@ def is_balanced(s):   # Part 4 - stretch (optional)
                 else:
                     myList.pop(len(myList)-1)
         else:
-            print("test 3")
             return False
 
     if myList:
